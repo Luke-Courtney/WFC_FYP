@@ -102,13 +102,31 @@ public class WFCBuilder : MonoBehaviour
             //No valid nodes catch
             if (potentialNodes.Count < 1)
             {
-                _grid[x, y] = nodes[0];  //nodes[0] is a blank tile to be put where no other tiles are valid
+                _grid[x, y] = nodes[0];  // nodes[0] is a blank tile to be put where no other tiles are valid
                 Debug.LogWarning("Attempted to collapse at " + x + "," + y + " but found no valid nodes");
             }
             else
             {
-                //Select random from potentialNodes
-                _grid[x, y] = potentialNodes[Random.Range(0, potentialNodes.Count)];
+                // Calculate the total weight of all potential nodes
+                float totalWeight = 0f;
+                foreach (var node in potentialNodes)
+                {
+                    totalWeight += node.Weight;
+                }
+
+                // Pick a random value between 0 and totalWeight
+                float randomValue = Random.Range(0, totalWeight);
+
+                // Select the node based on weighted probabilities
+                foreach (var node in potentialNodes)
+                {
+                    if (randomValue < node.Weight)
+                    {
+                        _grid[x, y] = node;
+                        break;
+                    }
+                    randomValue -= node.Weight;
+                }
             }
 
             //Instantiate prefab of tile

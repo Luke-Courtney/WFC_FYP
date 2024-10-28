@@ -12,6 +12,7 @@ public class WFCNode : ScriptableObject
     public WFC_Connection Bottom;
     public WFC_Connection Left;
     public WFC_Connection Right;
+    public float Weight = 1.0f;
 }
 
 

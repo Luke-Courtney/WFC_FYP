@@ -183,7 +183,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 26.991467
-  orthographic: 1
+  orthographic: 0
   orthographic size: 15
   m_Depth: -1
   m_CullingMask:
@@ -209,12 +209,70 @@ Transform:
   m_GameObject: {fileID: 58997757}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 12.5, y: 25, z: 12.5}
+  m_LocalPosition: {x: 125, y: 500, z: 125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &511603466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511603468}
+  - component: {fileID: 511603467}
+  m_Layer: 0
+  m_Name: WFC_Builder (Overworld)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &511603467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511603466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103863eddb4b6d842a46e223b2950254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 250
+  height: 250
+  nodes:
+  - {fileID: 11400000, guid: 05eb805e01acc1d4283ce0f48042029d, type: 2}
+  - {fileID: 11400000, guid: 656b42d4a1cc6eb4bb85b8f5f45ad917, type: 2}
+  - {fileID: 11400000, guid: 4baa60a7ae996424d8070d0108f7c18d, type: 2}
+  - {fileID: 11400000, guid: 3cc087e1fe2c6764eb00de6ab4570668, type: 2}
+  - {fileID: 11400000, guid: a58431636ca076049899f9cfcd6b4623, type: 2}
+  - {fileID: 11400000, guid: a6ab6d92fd93eed44a11449ba769d073, type: 2}
+  - {fileID: 11400000, guid: 7a6a5c085e1325045ae3397e5570828d, type: 2}
+  - {fileID: 11400000, guid: eaaa576f6a823bc40bcbedbb7f4ef450, type: 2}
+  - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
+  - {fileID: 11400000, guid: 96a0a99a574e9de4592be05ce88db2c5, type: 2}
+  - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
+--- !u!4 &511603468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511603466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744475984
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +284,7 @@ GameObject:
   - component: {fileID: 744475986}
   - component: {fileID: 744475985}
   m_Layer: 0
-  m_Name: WFC_Builder
+  m_Name: WFC_Builder (Roads)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,13 +297,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744475984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 103863eddb4b6d842a46e223b2950254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 25
-  height: 25
+  width: 250
+  height: 250
   nodes:
   - {fileID: 11400000, guid: 23b50db1add560348a3f63171f96a477, type: 2}
   - {fileID: 11400000, guid: 03ecb0cc1d7468f49a30a1c7115e189c, type: 2}
@@ -294,7 +352,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.8490566, g: 0.7104451, b: 0.33241364, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -354,7 +412,7 @@ Transform:
   m_GameObject: {fileID: 996706582}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 49.2, y: 120.3, z: -85.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -367,3 +425,4 @@ SceneRoots:
   - {fileID: 58997760}
   - {fileID: 996706584}
   - {fileID: 744475986}
+  - {fileID: 511603468}

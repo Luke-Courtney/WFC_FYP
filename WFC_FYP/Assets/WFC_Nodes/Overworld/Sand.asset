@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d384ac1685f0e42874c1bb38c21f55, type: 3}
+  m_Name: Sand
+  m_EditorClassIdentifier: 
+  name: Sand
+  prefab: {fileID: 1405708818816140624, guid: 25b98c989e311fc45945bfdf98869c62, type: 3}
+  Top:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 05eb805e01acc1d4283ce0f48042029d, type: 2}
+    - {fileID: 11400000, guid: 7a6a5c085e1325045ae3397e5570828d, type: 2}
+    - {fileID: 11400000, guid: 3cc087e1fe2c6764eb00de6ab4570668, type: 2}
+  Bottom:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 05eb805e01acc1d4283ce0f48042029d, type: 2}
+    - {fileID: 11400000, guid: 7a6a5c085e1325045ae3397e5570828d, type: 2}
+    - {fileID: 11400000, guid: 3cc087e1fe2c6764eb00de6ab4570668, type: 2}
+  Left:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 05eb805e01acc1d4283ce0f48042029d, type: 2}
+    - {fileID: 11400000, guid: 7a6a5c085e1325045ae3397e5570828d, type: 2}
+    - {fileID: 11400000, guid: 3cc087e1fe2c6764eb00de6ab4570668, type: 2}
+  Right:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 05eb805e01acc1d4283ce0f48042029d, type: 2}
+    - {fileID: 11400000, guid: 7a6a5c085e1325045ae3397e5570828d, type: 2}
+    - {fileID: 11400000, guid: 3cc087e1fe2c6764eb00de6ab4570668, type: 2}
+  Weight: 1
