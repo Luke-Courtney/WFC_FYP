@@ -34,4 +34,5 @@ MonoBehaviour:
     - {fileID: 11400000}
     - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
     - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
-  Weight: 0.8
+  Weight: 1
+  biasWeight: 1

@@ -30,4 +30,5 @@ MonoBehaviour:
     CompatibleNodes:
     - {fileID: 11400000}
     - {fileID: 11400000, guid: 05eb805e01acc1d4283ce0f48042029d, type: 2}
-  Weight: 1.3
+  Weight: 1
+  biasWeight: 1

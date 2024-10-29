@@ -47,7 +47,6 @@ public class WFCBuilder : MonoBehaviour
     {
         //Clear toCollapse list just to be safe
         toCollapse.Clear();
-
         toCollapse.Add(new Vector2Int(Random.Range(0, width), Random.Range(0, height)));
 
         while (toCollapse.Count > 0)
@@ -90,6 +89,8 @@ public class WFCBuilder : MonoBehaviour
                                 RemoveInvalidNodes(potentialNodes, neighborNode.Right.CompatibleNodes);     //Which nodes can go right of neighbour to the left
                                 break;
                         }
+
+                        AdjustWeights(potentialNodes, neighborNode);
                     }
                     else
                     {
@@ -132,6 +133,12 @@ public class WFCBuilder : MonoBehaviour
             //Instantiate prefab of tile
             GameObject newNode = Instantiate(_grid[x, y].prefab, new Vector3(x, 0f, y), Quaternion.identity);
 
+            // Reset all weights to their initial values after collapse
+            foreach (var node in potentialNodes)
+            {
+                node.biasWeight = node.Weight;
+            }
+
             toCollapse.RemoveAt(0);
 
         }
@@ -148,7 +155,6 @@ public class WFCBuilder : MonoBehaviour
     }
 
     //Removes invalid neighbor nodes from potentialNodes list
-    //TODO - Modify to use connectors on tile prefabs
     private void RemoveInvalidNodes(List<WFCNode> potentialNodes, List<WFCNode> validNodes)
     {
         for (int i = potentialNodes.Count - 1; i > -1; i--)
@@ -156,6 +162,17 @@ public class WFCBuilder : MonoBehaviour
             if (!validNodes.Contains(potentialNodes[i]))
             {
                 potentialNodes.RemoveAt(i);
+            }
+        }
+    }
+
+    private void AdjustWeights(List<WFCNode> potentialNodes, WFCNode neighborNode)
+    {
+        foreach (var node in potentialNodes)
+        {
+            if (node.name == neighborNode.name)
+            {
+                node.biasWeight = Mathf.Min(node.Weight * 1.5f, 5);; // Increase weight for matching type. Increases odds that a tile will match its neighbours
             }
         }
     }

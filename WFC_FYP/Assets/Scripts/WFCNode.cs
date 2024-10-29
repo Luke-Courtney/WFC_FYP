@@ -13,6 +13,12 @@ public class WFCNode : ScriptableObject
     public WFC_Connection Left;
     public WFC_Connection Right;
     public float Weight = 1.0f;
+    public float biasWeight = 1.0f; //The weight for the odds that at tile will match its neighbor. Gets updated in WFCBuilder
+
+    private void Awake()
+    {
+        Weight = biasWeight; // Initialize biasWeight with the starting Weight
+    }
 }
 
 
