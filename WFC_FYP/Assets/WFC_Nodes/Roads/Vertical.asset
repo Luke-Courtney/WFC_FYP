@@ -18,15 +18,24 @@ MonoBehaviour:
     CompatibleNodes:
     - {fileID: 11400000}
     - {fileID: 11400000, guid: 001f0e357927b7141b0b886552844f6d, type: 2}
+    - {fileID: 11400000, guid: 15a92a1637a72f647b9e6615d93257f8, type: 2}
+    - {fileID: 11400000, guid: 72c3a81287a514c45856ef6a533185ad, type: 2}
+    - {fileID: 11400000, guid: 5725bb7543429f0439025ae65a08c14e, type: 2}
   Bottom:
     CompatibleNodes:
     - {fileID: 11400000}
     - {fileID: 11400000, guid: 001f0e357927b7141b0b886552844f6d, type: 2}
+    - {fileID: 11400000, guid: 15a92a1637a72f647b9e6615d93257f8, type: 2}
+    - {fileID: 11400000, guid: 72c3a81287a514c45856ef6a533185ad, type: 2}
+    - {fileID: 11400000, guid: cd3c7fd9425c4d745815eda22341a4aa, type: 2}
   Left:
     CompatibleNodes:
     - {fileID: 11400000}
     - {fileID: 11400000, guid: 23b50db1add560348a3f63171f96a477, type: 2}
+    - {fileID: 11400000, guid: 72c3a81287a514c45856ef6a533185ad, type: 2}
   Right:
     CompatibleNodes:
     - {fileID: 11400000}
     - {fileID: 11400000, guid: 23b50db1add560348a3f63171f96a477, type: 2}
+    - {fileID: 11400000, guid: 15a92a1637a72f647b9e6615d93257f8, type: 2}
+  Weight: 1
