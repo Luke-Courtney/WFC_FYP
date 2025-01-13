@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class WFCBuilder : MonoBehaviour
 {
+    //Random
+    [SerializeField] private System.Random random;
+    [SerializeField] private bool useUserSeed = true;  
+    [SerializeField] private int userSeed;
+
     [SerializeField] private int width;
     [SerializeField] private int height;
 
@@ -27,6 +32,15 @@ public class WFCBuilder : MonoBehaviour
 
     private void Start()
     {
+        // If using random seed, generate a random seed
+        if (!useUserSeed)
+        {
+            userSeed = Random.Range(int.MinValue, int.MaxValue); // Random seed if enabled
+        }
+
+        random = new System.Random(userSeed); // Initialize System.Random with the seed
+
+
         //Initialize grid as an array of nodes
         _grid = new WFCNode[width, height];
 
@@ -48,18 +62,18 @@ public class WFCBuilder : MonoBehaviour
         //Clear toCollapse list just to be safe
         toCollapse.Clear();
 
-        toCollapse.Add(new Vector2Int(Random.Range(0, width), Random.Range(0, height)));
+        toCollapse.Add(new Vector2Int(random.Next(0, width), random.Next(0, height))); // Use System.Random here
 
         while (toCollapse.Count > 0)
         {
-            //Position of X and Y of toCollapse[0]
+            // Position of X and Y of toCollapse[0]
             int x = toCollapse[0].x;
             int y = toCollapse[0].y;
 
-            //Create list potentialNodes that containes all possible nodes
+            // Create list of potentialNodes containing all possible nodes
             List<WFCNode> potentialNodes = new List<WFCNode>(nodes);
 
-            //Loop through neighbours
+            // Loop through neighbors
             for (int i = 0; i < offsets.Length; i++)
             {
                 Vector2Int neighbor = new Vector2Int(x + offsets[i].x, y + offsets[i].y);
@@ -70,54 +84,53 @@ public class WFCBuilder : MonoBehaviour
 
                     if (neighborNode != null)
                     {
-                        //If neighbor != null, then its been collapsed and we can use its tile to reduced amount of possibilities of current node
-                        //Switch which neighbour is being checked, top, bottom, right or left
+                        // If neighbor != null, then it's been collapsed, so reduce possibilities
                         switch (i)
                         {
                             case 0:
-                                RemoveInvalidNodes(potentialNodes, neighborNode.Bottom.CompatibleNodes);    //Which nodes can go below neighbour to the top
+                                RemoveInvalidNodes(potentialNodes, neighborNode.Bottom.CompatibleNodes);  // Top
                                 break;
 
                             case 1:
-                                RemoveInvalidNodes(potentialNodes, neighborNode.Top.CompatibleNodes);       //Which nodes can go above neighbour below
+                                RemoveInvalidNodes(potentialNodes, neighborNode.Top.CompatibleNodes);  // Bottom
                                 break;
 
                             case 2:
-                                RemoveInvalidNodes(potentialNodes, neighborNode.Left.CompatibleNodes);      //Which nodes can go left of neighbour to the right
+                                RemoveInvalidNodes(potentialNodes, neighborNode.Left.CompatibleNodes);  // Left
                                 break;
 
                             case 3:
-                                RemoveInvalidNodes(potentialNodes, neighborNode.Right.CompatibleNodes);     //Which nodes can go right of neighbour to the left
+                                RemoveInvalidNodes(potentialNodes, neighborNode.Right.CompatibleNodes); // Right
                                 break;
                         }
                     }
                     else
                     {
-                        //If neighbour is null (uncollapsed) and doesnt exist in toCollapse, add to toCollapse
+                        // If neighbor is null (uncollapsed), add it to toCollapse
                         if (!toCollapse.Contains(neighbor)) { toCollapse.Add(neighbor); }
                     }
                 }
             }
 
-            //No valid nodes catch
+            // If no valid nodes found
             if (potentialNodes.Count < 1)
             {
-                _grid[x, y] = nodes[0];  // nodes[0] is a blank tile to be put where no other tiles are valid
+                _grid[x, y] = nodes[0]; // Blank tile for invalid node
                 Debug.LogWarning("Attempted to collapse at " + x + "," + y + " but found no valid nodes");
             }
             else
             {
-                // Calculate the total weight of all potential nodes
+                // Calculate total weight of all potential nodes
                 float totalWeight = 0f;
                 foreach (var node in potentialNodes)
                 {
                     totalWeight += node.Weight;
                 }
 
-                // Pick a random value between 0 and totalWeight
-                float randomValue = Random.Range(0, totalWeight);
+                // Pick a random value based on the total weight
+                float randomValue = (float)random.NextDouble() * totalWeight; // Use random.NextDouble() for float
 
-                // Select the node based on weighted probabilities
+                // Select node based on weighted probability
                 foreach (var node in potentialNodes)
                 {
                     if (randomValue < node.Weight)
@@ -129,11 +142,10 @@ public class WFCBuilder : MonoBehaviour
                 }
             }
 
-            //Instantiate prefab of tile
+            // Instantiate prefab of selected node
             GameObject newNode = Instantiate(_grid[x, y].prefab, new Vector3(x, 0f, y), Quaternion.identity);
 
             toCollapse.RemoveAt(0);
-
         }
     }
 
