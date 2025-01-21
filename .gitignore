@@ -1,0 +1,83 @@
+# Unity gitignore 
+# Unity specific
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# Visual Studio / Rider
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+.idea/
+*.csproj.user
+*.vs/
+
+# Unity generated files
+*.unityproj
+*.asset
+*.pidb.meta
+*.pdb.meta
+*.apk
+*.unitypackage
+*.psd
+*.tga
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and caches
+*.log
+*.stacktrace
+*.trace
+*.bak
+*.old
+*.swp
+
+# Build artifacts
+/Build/
+/Builds/
+/bin/
+/obj/
+
+# Unity Cloud Build
+[Uu]ser[Ss]ettings/
+
+# Temporary files
+*.tmp
+*.bak
+*.unitypackage
+*.log
+
+# Exclude custom files
+/Assets/Scenes/*.unity.meta
+/Assets/AddressableAssetsData/*.asset
+
+# Prevent uploading sensitive files
+*.pfx
+*.key
+*.pem
+*.crt
+*.cert
+*.mobileprovision
+
+# Ignore Play mode tests results
+Assets/Scenes/Tests/Results/
+
+# Avoid unnecessary local environment configurations
+.env
