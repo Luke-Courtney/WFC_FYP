@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -488,7 +488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &511603467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,7 +550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &744475985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,6 +579,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ac30e048aaaeb964b84b4edadb6a0dc5, type: 2}
   - {fileID: 11400000, guid: 465866b74aecca541a2022417f2e8f03, type: 2}
   - {fileID: 11400000, guid: 07dbf65dadf24e24195e748f9aecdb57, type: 2}
+  - {fileID: 11400000, guid: 74c3b3c372c0bf54988a1609e8e46ac6, type: 2}
 --- !u!4 &744475986
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +902,7 @@ GameObject:
   - component: {fileID: 1161010150}
   - component: {fileID: 1161010149}
   - component: {fileID: 1161010148}
+  - component: {fileID: 1161010151}
   m_Layer: 0
   m_Name: Player (Overworld)
   m_TagString: Player
@@ -964,6 +966,18 @@ Transform:
   - {fileID: 1803815597}
   m_Father: {fileID: 511603468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161010151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161010147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478f79f29328b1e4da2b87b75472e3fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1291126499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,6 +1411,7 @@ GameObject:
   - component: {fileID: 1702962283}
   - component: {fileID: 1702962285}
   - component: {fileID: 1702962284}
+  - component: {fileID: 1702962286}
   m_Layer: 0
   m_Name: Player (Roads)
   m_TagString: Player
@@ -1461,6 +1476,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1702962286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702962282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478f79f29328b1e4da2b87b75472e3fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1803815596
 GameObject:
   m_ObjectHideFlags: 0

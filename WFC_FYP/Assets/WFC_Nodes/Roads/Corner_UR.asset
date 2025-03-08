@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Corner_UR
   m_EditorClassIdentifier: 
   name: corner_ur
-  prefab: {fileID: 6409966093940651544, guid: ec61756a21309de479f98a4b208ec06c, type: 3}
+  prefab: {fileID: 6409966093940651544, guid: e40756e656053874bbb68e24051a3bd7, type: 3}
   Top:
     CompatibleNodes:
     - {fileID: 11400000, guid: 1a4c3199d2d81b4409d59aaf854898ec, type: 2}

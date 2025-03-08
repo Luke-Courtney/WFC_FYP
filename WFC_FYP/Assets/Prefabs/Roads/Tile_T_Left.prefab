@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 1306977704479368202}
   m_Layer: 0
   m_Name: Tile_T_Left
-  m_TagString: Untagged
+  m_TagString: Spawnable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
