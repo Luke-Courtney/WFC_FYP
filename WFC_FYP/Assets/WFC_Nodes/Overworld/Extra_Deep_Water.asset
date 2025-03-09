@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Deep_Water
   prefab: {fileID: 6409966093940651544, guid: c2c82c58cfe189044898dde5bd3c0112, type: 3}
+  omnidirectionalRules: 1
+  All:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: a6ab6d92fd93eed44a11449ba769d073, type: 2}
   Top:
     CompatibleNodes:
     - {fileID: 11400000}

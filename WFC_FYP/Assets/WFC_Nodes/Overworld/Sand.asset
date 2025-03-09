@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sand
   prefab: {fileID: 1405708818816140624, guid: 25b98c989e311fc45945bfdf98869c62, type: 3}
+  omnidirectionalRules: 1
+  All:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 05eb805e01acc1d4283ce0f48042029d, type: 2}
+    - {fileID: 11400000, guid: 7a6a5c085e1325045ae3397e5570828d, type: 2}
+    - {fileID: 11400000, guid: 3cc087e1fe2c6764eb00de6ab4570668, type: 2}
   Top:
     CompatibleNodes:
     - {fileID: 11400000}

@@ -6,10 +6,12 @@ using UnityEngine;
 public class WFCBuilder : MonoBehaviour
 {
     //Random
+    [Header("Seed Settings")]
     [SerializeField] private System.Random random;
     [SerializeField] private bool useUserSeed = true;  
     [SerializeField] private int userSeed;
 
+    [Header("Map Size")]
     [SerializeField] private int width;
     [SerializeField] private int height;
 

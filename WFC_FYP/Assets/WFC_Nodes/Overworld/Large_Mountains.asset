@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Large_Mountains
   prefab: {fileID: 1405708818816140624, guid: 32c8c97fac9d9ea4c9a4cef26bc20ff1, type: 3}
+  omnidirectionalRules: 1
+  All:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
+    - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
   Top:
     CompatibleNodes:
     - {fileID: 11400000}
