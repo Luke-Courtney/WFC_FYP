@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private float zoomSpeed = 2.0f;
     [SerializeField] private float minY = 5.0f; 
-    [SerializeField] private float maxY = 75.0f;
+    [SerializeField] private float maxY = 150.0f;
 
     private Vector3 targetPos;
 

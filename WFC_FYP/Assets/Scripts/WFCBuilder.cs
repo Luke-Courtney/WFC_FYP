@@ -51,7 +51,7 @@ public class WFCBuilder : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             string SampleScene = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(SampleScene);
@@ -162,7 +162,6 @@ public class WFCBuilder : MonoBehaviour
     }
 
     //Removes invalid neighbor nodes from potentialNodes list
-    //TODO - Modify to use connectors on tile prefabs
     private void RemoveInvalidNodes(List<WFCNode> potentialNodes, List<WFCNode> validNodes)
     {
         for (int i = potentialNodes.Count - 1; i > -1; i--)

@@ -359,6 +359,7 @@
 "Assets/Scripts/PlayerController_Overworld.cs"
 "Assets/Scripts/PlayerController_Roads.cs"
 "Assets/Scripts/PlayerSpawner.cs"
+"Assets/Scripts/SceneController.cs"
 "Assets/Scripts/WFCBuilder.cs"
 "Assets/Scripts/WFCNode.cs"
 -langversion:9.0
