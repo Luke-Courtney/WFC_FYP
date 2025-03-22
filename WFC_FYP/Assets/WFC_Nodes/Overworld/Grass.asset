@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d384ac1685f0e42874c1bb38c21f55, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  name: Grass
+  prefab: {fileID: 6292373149026149409, guid: e0539760fe530564d84cc26e5472ee29, type: 3}
+  omnidirectionalRules: 1
+  All:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 4baa60a7ae996424d8070d0108f7c18d, type: 2}
+    - {fileID: 11400000, guid: a58431636ca076049899f9cfcd6b4623, type: 2}
+    - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
+    - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
+  Top:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 4baa60a7ae996424d8070d0108f7c18d, type: 2}
+    - {fileID: 11400000, guid: a58431636ca076049899f9cfcd6b4623, type: 2}
+    - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
+    - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
+  Bottom:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 4baa60a7ae996424d8070d0108f7c18d, type: 2}
+    - {fileID: 11400000, guid: a58431636ca076049899f9cfcd6b4623, type: 2}
+    - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
+    - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
+  Left:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 4baa60a7ae996424d8070d0108f7c18d, type: 2}
+    - {fileID: 11400000, guid: a58431636ca076049899f9cfcd6b4623, type: 2}
+    - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
+    - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
+  Right:
+    CompatibleNodes:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 4baa60a7ae996424d8070d0108f7c18d, type: 2}
+    - {fileID: 11400000, guid: a58431636ca076049899f9cfcd6b4623, type: 2}
+    - {fileID: 11400000, guid: 7d700af7fef20974b87f2c924bd36e18, type: 2}
+    - {fileID: 11400000, guid: 9db301470fce54c448db7768957bc9fb, type: 2}
+  Weight: 1.5

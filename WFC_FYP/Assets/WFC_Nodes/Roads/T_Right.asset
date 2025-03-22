@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d384ac1685f0e42874c1bb38c21f55, type: 3}
+  m_Name: T_Right
+  m_EditorClassIdentifier: 
+  name: T_right
+  prefab: {fileID: 6409966093940651544, guid: 7135f3f2cd822bf4c8d41dd3355513c1, type: 3}
+  Top:
+    CompatibleNodes:
+    - {fileID: 11400000, guid: 1a4c3199d2d81b4409d59aaf854898ec, type: 2}
+    - {fileID: 11400000, guid: aa8c92e2fde71da4ba60b24836b2bd27, type: 2}
+    - {fileID: 11400000, guid: 07dbf65dadf24e24195e748f9aecdb57, type: 2}
+    - {fileID: 11400000, guid: ac30e048aaaeb964b84b4edadb6a0dc5, type: 2}
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 74c3b3c372c0bf54988a1609e8e46ac6, type: 2}
+    - {fileID: 11400000, guid: 0d398d200455cf9418e15b2453bf587c, type: 2}
+  Bottom:
+    CompatibleNodes:
+    - {fileID: 11400000, guid: 0e9aafe0cb8b76347a1210796d26ce13, type: 2}
+    - {fileID: 11400000, guid: 7c43e2fea70a54d4eb8f818975367d5f, type: 2}
+    - {fileID: 11400000, guid: ac30e048aaaeb964b84b4edadb6a0dc5, type: 2}
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: b914f836f7818f747a211a56d1a208a9, type: 2}
+    - {fileID: 11400000, guid: 0d398d200455cf9418e15b2453bf587c, type: 2}
+    - {fileID: 11400000, guid: 74c3b3c372c0bf54988a1609e8e46ac6, type: 2}
+  Left:
+    CompatibleNodes:
+    - {fileID: 11400000, guid: 03ecb0cc1d7468f49a30a1c7115e189c, type: 2}
+    - {fileID: 11400000, guid: 74c3b3c372c0bf54988a1609e8e46ac6, type: 2}
+    - {fileID: 11400000, guid: 07dbf65dadf24e24195e748f9aecdb57, type: 2}
+    - {fileID: 11400000, guid: ac30e048aaaeb964b84b4edadb6a0dc5, type: 2}
+    - {fileID: 11400000, guid: b914f836f7818f747a211a56d1a208a9, type: 2}
+    - {fileID: 11400000, guid: 7c43e2fea70a54d4eb8f818975367d5f, type: 2}
+    - {fileID: 11400000, guid: aa8c92e2fde71da4ba60b24836b2bd27, type: 2}
+  Right:
+    CompatibleNodes:
+    - {fileID: 11400000, guid: 23b50db1add560348a3f63171f96a477, type: 2}
+    - {fileID: 11400000, guid: aa8c92e2fde71da4ba60b24836b2bd27, type: 2}
+    - {fileID: 11400000, guid: 7c43e2fea70a54d4eb8f818975367d5f, type: 2}
+    - {fileID: 11400000, guid: ac30e048aaaeb964b84b4edadb6a0dc5, type: 2}
+    - {fileID: 11400000, guid: 0d398d200455cf9418e15b2453bf587c, type: 2}
+  Weight: 1
