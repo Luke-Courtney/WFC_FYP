@@ -14,3 +14,14 @@ Overworld demo (Omnidirectional rules)
 
 Roads demo (Per-direction rules)
 ![Roads](https://github.com/user-attachments/assets/5018360b-bd5d-4d82-bf94-81b1ee5fbee6)
+
+**To Run:**
+- Download ZIP
+- Extract
+- Run .EXE
+
+**To Use**
+- Download UnityPackage
+- Import Package into Unity
+- Add WFCBuilder to Scene
+- Populate WFCBuilder with nodes
