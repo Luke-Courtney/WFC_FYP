@@ -26,4 +26,10 @@ public class SceneController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    //Open Github page
+    public void OpenGitURL()
+    {
+        Application.OpenURL("https://github.com/Luke-Courtney/WFC_FYP");
+    }
 }
